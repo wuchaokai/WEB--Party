@@ -191,7 +191,7 @@
       .content {
         border 2px solid #94c4e6
         border-radius 5px
-        height 370px
+        height 380px
       //-moz-outline-radius 5px
       //-webkit-outline-radius 5px
       //outline 1px inset #e1eff8
@@ -203,30 +203,46 @@
     .rside {
       flex 1
       .content-wrapper {
+        margin 25px 0
         border 2px solid #94c4e6
         border-radius 5px
-        height 370px
+        height 380px
         padding 16px
         font-size 1.3em
         line-height 1.5
         .login-form {
           display block
-          margin 0 auto
+          margin 5px auto
           width calc(100% - 150px)
-          form-item{
+          .form-item {
             width 80%
+            height 40px
+            box-sizing border-box
+            padding-left 1em
+            border-radius 3px
+            border 1px solid #d0d4d3
+            outline none
           }
           .username {
 
           }
           .password {
-
+            margin 30px 0
           }
           .submit {
-
+            background-color #55c8bb
+            color #ffffff
+            cursor pointer
+            &:hover {
+              box-shadow 1px 1px 1px break-inside rgba(0, 0, 0, 0.2)
+            }
+          //font-size 1.1em
           }
         }
       }
     }
   }
+}
+
+.test {
 }

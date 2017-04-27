@@ -174,7 +174,7 @@
 .content .test-side .lside .content {
   border: 2px solid #94c4e6;
   border-radius: 5px;
-  height: 370px;
+  height: 380px;
   padding: 16px;
   font-size: 1.3em;
   line-height: 1.5;
@@ -183,18 +183,36 @@
   flex: 1;
 }
 .content .test-side .rside .content-wrapper {
+  margin: 25px 0;
   border: 2px solid #94c4e6;
   border-radius: 5px;
-  height: 370px;
+  height: 380px;
   padding: 16px;
   font-size: 1.3em;
   line-height: 1.5;
 }
 .content .test-side .rside .content-wrapper .login-form {
   display: block;
-  margin: 0 auto;
+  margin: 5px auto;
   width: calc(100% - 150px);
 }
-.content .test-side .rside .content-wrapper .login-form form-item {
+.content .test-side .rside .content-wrapper .login-form .form-item {
   width: 80%;
+  height: 40px;
+  box-sizing: border-box;
+  padding-left: 1em;
+  border-radius: 3px;
+  border: 1px solid #d0d4d3;
+  outline: none;
+}
+.content .test-side .rside .content-wrapper .login-form .password {
+  margin: 30px 0;
+}
+.content .test-side .rside .content-wrapper .login-form .submit {
+  background-color: #55c8bb;
+  color: #fff;
+  cursor: pointer;
+}
+.content .test-side .rside .content-wrapper .login-form .submit:hover {
+  box-shadow: 1px 1px 1px break-inside rgba(0,0,0,0.2);
 }
