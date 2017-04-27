@@ -6,3 +6,9 @@
   width: 1100px;
   margin: 0 auto;
 }
+li {
+  text-decoration: none;
+}
+p {
+  text-indent: 2em;
+}
