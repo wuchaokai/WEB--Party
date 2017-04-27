@@ -1,6 +1,6 @@
 .max-width {
   width: 100%;
-  max-width: 1920px;
+  max-width: 2560px;
   margin: 0 auto;
 }
 .common-width {
@@ -9,6 +9,7 @@
 }
 li {
   text-decoration: none;
+  list-style: none;
 }
 p {
   margin: 25px 0;
