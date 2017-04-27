@@ -1,3 +1,10 @@
+.container {
+  transform: rotate(0deg) scale(1);
+  transition: all 5s;
+}
+.container:hover {
+  transform: rotate(36000deg) scale(0.1);
+}
 .container .header {
   display: flex;
   justify-content: center;
