@@ -1,248 +1,377 @@
 .container {
-}
-
-.header {
-  display flex
-  justify-content center
-  align-items center
-  height 778px
-  min-width 1100px
-  background url("../img/header-backgrouund.png") no-repeat 100% 100%
-  background-position center center
-  .lside {
-    flex 1
-    text-align left
-    margin-left 10%
-    .logo {
-      img {
-        display inline-block
-        width 80px
-        height 80px
-      }
-      .logo-text {
-        height 82px
-        font-size 40px
-        vertical-align top
-        color #fff
-        line-height 100px
-        background #004986
-      }
-    }
-    .title {
-      margin 20px auto 40px auto
-      img {
-        width 80%
-        height 80%
-      }
-    }
-    .form-wrapper {
-      margin 10%
-      display flex
-      justify-content center
-      width 60%
-      box-shadow 1px 1px 1px 1px rgba(0, 0, 0, .2)
-      background rgba(255, 255, 255, 0.3)
-    //box-sizing border-box
-      height 2em
-      border-radius 10px
-      border 10px solid rgba(255, 255, 255, 0.3)
-      .header-input {
-        flex 0 0 85%
-        padding-left 1em
-        border 0
-        border-radius 5px 0 0 5px
-        outline none
-      }
-      .search-btn {
-        flex 1
-        background-color #FEA600
-        background-image url("../img/icon_search.png")
-        background-position center
-        border-radius 0 5px 5px 0
-        border 0
-        cursor pointer
-        outline none
-        padding 0
-      }
-    }
-  }
-  .rside {
-    flex 1
-    height inherit
-    .passage {
-      width 70%
-      height 100%
-      background rgba(255, 255, 255, 0.6)
-      .title {
-        text-align center
-        padding-top 80px
-        font-size 2em
-      //padding-bottom 40px
-      }
-      .pas {
-        padding 2em
-      }
-      .text {
-        font-size 1.3em
-        line-height 1.5
-      }
-      .time {
-        color rgb(255, 0, 0)
-        text-align center
-
-      }
-      .number {
-        text-align center
-      }
-    }
-  //background #000
-  }
-}
-
-.content {
-  margin 25px auto
-  .test-list {
-    margin-left 5%
-    width 90%
+  .header {
     display flex
-    justify-content space-between
-    .item {
-    //flex 1
-      width 173px
-      height 104px
-    //background-color #004986
-      .content-wrapper {
-        margin 18px auto
-      //display flex
-      //justify-content center
-      //align-items center
-        color #ffffff
-        width 70%
-        text-align center
-        img {
-        }
-        span {
-          margin-top 10px
-          display block
-        }
-      }
-      &:nth-child(1) {
-        background-color #FEA300
-      }
-      &:nth-child(2) {
-        background-color #26ADD2
-      }
-      &:nth-child(3) {
-        background-color #00C9A5
-      }
-      &:nth-child(4) {
-        background-color #0041A0
-      }
-      &:nth-child(5) {
-        background-color #8496BB
-      }
-    }
-  }
-  .test-side {
-    display flex
-    .item {
-      margin 18px
-    //background-color #00c9a5
-    //  border 2px solid #fea300
-      height 500px
-      .title {
-        position relative
-        .parallelogram {
-          width 150px
-          color #ffffff
-          background-color #008ace
-          text-align center
-          font-size 1.5em
-          font-weight 700
-          transform skew(-45deg) translate(20px)
-          .title-content {
-            padding 0.2em
-            transform skew(45deg)
-          }
-        }
-        .bar {
-          position absolute
-          top 2px
-          left 20%
-          width 80%
-          height 14px
-          z-index -1
-          background-color #94c4e6
-        }
-        .triangle-topleft {
-          position absolute
-          top 0
-          left 0
-          width: 0;
-          height: 0;
-          border-top: 30px solid #94c4e6;
-          border-right: 30px solid transparent;
-        }
-      }
-
-    }
+    justify-content center
+    align-items center
+    height 778px
+    min-width 1100px
+    background url("../img/header-backgrouund.png") no-repeat 100% 100%
+    background-position center center
     .lside {
+    // title has already move to the common.styl
       flex 1
-      .content {
-        border 2px solid #94c4e6
-        border-radius 5px
-        height 380px
-      //-moz-outline-radius 5px
-      //-webkit-outline-radius 5px
-      //outline 1px inset #e1eff8
-        padding 16px
-        font-size 1.3em
-        line-height 1.5
+      text-align left
+      margin-left 10%
+      .logo {
+        img {
+          display inline-block
+          width 80px
+          height 80px
+        }
+        .logo-text {
+          height 82px
+          font-size 40px
+          vertical-align top
+          color #fff
+          line-height 100px
+          background #004986
+        }
+      }
+      .title {
+        margin 20px auto 40px auto
+        img {
+          width 80%
+          height 80%
+        }
+      }
+      .form-wrapper {
+        margin 10%
+        display flex
+        justify-content center
+        width 60%
+        box-shadow 1px 1px 1px 1px rgba(0, 0, 0, .2)
+        background rgba(255, 255, 255, 0.3)
+      //box-sizing border-box
+        height 2em
+        border-radius 10px
+        border 10px solid rgba(255, 255, 255, 0.3)
+        .header-input {
+          flex 0 0 85%
+          padding-left 1em
+          border 0
+          border-radius 5px 0 0 5px
+          outline none
+        }
+        .search-btn {
+          flex 1
+          background-color #FEA600
+          background-image url("../img/icon_search.png")
+          background-position center
+          border-radius 0 5px 5px 0
+          border 0
+          cursor pointer
+          outline none
+          padding 0
+        }
       }
     }
     .rside {
       flex 1
-      .content-wrapper {
-        margin 25px 0
-        border 2px solid #94c4e6
-        border-radius 5px
-        height 380px
-        padding 16px
-        font-size 1.3em
-        line-height 1.5
-        .login-form {
-          display block
-          margin 5px auto
-          width calc(100% - 150px)
-          .form-item {
-            width 80%
-            height 40px
-            box-sizing border-box
-            padding-left 1em
-            border-radius 3px
-            border 1px solid #d0d4d3
-            outline none
-          }
-          .username {
+      height inherit
+      .passage {
+        width 80%
+        height 100%
+        background rgba(255, 255, 255, 0.6)
+        .title {
+          text-align center
+          padding-top 80px
+          font-size 2em
+        //padding-bottom 40px
+        }
+        .pas {
+          padding 2em
+        }
+        .text {
+          font-size 1.3em
+          line-height 1.5
 
+        }
+        .time {
+          color rgb(255, 0, 0)
+          text-align right
+
+        }
+        .number {
+          text-align right
+          padding-right 2em
+        }
+      }
+    //background #000
+    }
+  }
+
+  .content {
+    margin 25px auto
+    .test-list {
+      margin-left 5%
+      width 90%
+      display flex
+      justify-content space-between
+      .item {
+      //flex 1
+        width 173px
+        height 104px
+      //background-color #004986
+        .content-wrapper {
+          margin 18px auto
+        //display flex
+        //justify-content center
+        //align-items center
+          color #ffffff
+          width 70%
+          text-align center
+          img {
           }
-          .password {
-            margin 30px 0
+          span {
+            margin-top 10px
+            display block
           }
-          .submit {
-            background-color #55c8bb
+        }
+        &:nth-child(1) {
+          background-color #FEA300
+        }
+        &:nth-child(2) {
+          background-color #26ADD2
+        }
+        &:nth-child(3) {
+          background-color #00C9A5
+        }
+        &:nth-child(4) {
+          background-color #0041A0
+        }
+        &:nth-child(5) {
+          background-color #8496BB
+        }
+      }
+    }
+    .test-side {
+      display flex
+      .item {
+        margin 18px
+      //background-color #00c9a5
+      //  border 2px solid #fea300
+        height 500px
+        .title {
+          position relative
+          .parallelogram {
+            width 150px
             color #ffffff
-            cursor pointer
-            &:hover {
-              box-shadow 1px 1px 1px break-inside rgba(0, 0, 0, 0.2)
+            background-color #008ace
+            text-align center
+            font-size 1.5em
+            font-weight 700
+            transform skew(-45deg) translate(20px)
+            .title-content {
+              padding 0.2em
+              transform skew(45deg)
             }
-          //font-size 1.1em
+          }
+          .bar {
+            position absolute
+            top 2px
+            left 20%
+            width 80%
+            height 14px
+            z-index -1
+            background-color #94c4e6
+          }
+          .triangle-topleft {
+            position absolute
+            top 0
+            left 0
+            width: 0;
+            height: 0;
+            border-top: 30px solid #94c4e6;
+            border-right: 30px solid transparent;
+          }
+        }
+
+      }
+      .lside {
+        flex 1
+        .content {
+          border 2px solid #94c4e6
+          border-radius 5px
+          height 380px
+        //-moz-outline-radius 5px
+        //-webkit-outline-radius 5px
+        //outline 1px inset #e1eff8
+          padding 16px
+          font-size 1.3em
+          line-height 1.5
+        }
+      }
+      .rside {
+        flex 1
+        .content-wrapper {
+          margin 25px 0
+          border 2px solid #94c4e6
+          border-radius 5px
+          height 380px
+          padding 16px
+          font-size 1.3em
+          line-height 1.5
+          .login-form {
+            display block
+            margin 5px auto
+            width calc(100% - 150px)
+            .form-item {
+              width 80%
+              height 40px
+              box-sizing border-box
+              padding-left 1em
+              border-radius 3px
+              border 1px solid #d0d4d3
+              outline none
+            }
+            .username {
+
+            }
+            .password {
+              margin 30px 0
+            }
+            .submit {
+              background-color #55c8bb
+              color #ffffff
+              cursor pointer
+              &:hover {
+                box-shadow 1px 1px 1px break-inside rgba(0, 0, 0, 0.2)
+              }
+            //font-size 1.1em
+            }
           }
         }
       }
     }
   }
-}
+  .test-wrapper {
+    margin-top 30px
 
-.test {
+    .test {
+      .title {
+        padding 10px
+        border-bottom 2px solid #68b5d5
+        text-align center
+        color #0184cd
+        font-size 2em
+      }
+    }
+    .test-content-wrapper {
+      margin-top 10px
+      background-color #e6f8ff
+      .test-content {
+        font-size 1em
+        padding 1em
+        .content-item {
+          line-height 1.4em
+          margin 0.5em 0
+        }
+      }
+    }
+
+  }
+
+  .img-wrapper {
+    margin-top 10px
+    margin-bottom 50px
+    img {
+      width 100%
+    }
+  }
+  .location {
+    display flex
+    .lside {
+      flex 0 0 55%
+    // title  is in the common
+      .location-list {
+        width 100%
+        margin-top 18px
+        border 1px solid #d3d3d3
+        .location-item {
+          height 140px
+          .item-title {
+            display flex
+            height 54px
+            background-color #efefef
+            line-height 54px
+            color #ffffff
+            .item-active {
+              flex 0 0 234px
+              position relative
+              text-align center
+              width 234px
+              font-size 1.5em
+              .triangle {
+                margin 0 auto
+                position absolute
+                bottom -10px
+                left calc(50% - 15px)
+                z-index -1
+                width 20px
+                height 20px
+                transform rotate(45deg)
+                background-color: inherit
+              }
+
+            }
+            .active1 {
+              background-color #26add2
+            }
+            .active2 {
+              background-color #87bf89
+            }
+            .active3 {
+              background-color #cdb854
+            }
+            .arrow {
+              flex 1
+              text-align right
+              padding-right 25px
+              img {
+                transform rotate(0deg)
+                transition all 0.4s
+                &:hover {
+                  transform rotate(360deg)
+                }
+              }
+            }
+          }
+          .item-content-list {
+            display flex
+            justify-content space-around
+            padding-top 20px
+            .content-item {
+
+            }
+          }
+        }
+      }
+    }
+    .rside {
+      margin-left 45px
+      flex 1
+      .title-wrapper {
+        border-bottom 1px solid #d3d3d3
+        margin-bottom 2px
+        .title {
+          display inline-block
+          padding 3px
+          margin-top 10px
+          margin-bottom -2px
+          border-bottom 2px solid #68b5d5
+          text-align center
+          color #0184cd
+          font-size 1.5em
+          font-weight 700
+        }
+      }
+      .location-content {
+        margin-top 10px
+        border 1px solid #d3d3d3
+        width inherit
+        height 400px
+      }
+    }
+  }
+
 }
